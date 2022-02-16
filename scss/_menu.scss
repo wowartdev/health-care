@@ -1,0 +1,58 @@
+.menu {
+  display: flex;
+  flex: 1 1 300px;
+  justify-content: flex-end;
+  transition: left .5s ease 0s;
+  
+  @include md {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &:target {
+    left: 0;
+  }
+  
+  &__list {
+    display: flex;
+    @include md {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+  
+  &__item {
+    margin-right: 25px;
+    list-style-type: none;
+    
+    @include md {
+      margin-right: 0;
+      margin-top: 20px;
+      font-size: 30px;
+    }
+  }
+  
+  &__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 12px;
+    
+    letter-spacing: 0.14em;
+    
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

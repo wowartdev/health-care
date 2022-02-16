@@ -1,0 +1,42 @@
+.stay-safe {
+  
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+  &__image {
+    flex: 0 1 55%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  &__image img {
+    z-index: 2;
+  }
+  
+  &__image::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #EC5863;
+    position: absolute;
+    bottom: 15px;
+    right: 160px;
+  }
+  
+  &__image::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background-color: #EC5863;
+    position: absolute;
+    left: 70px;
+  }
+  
+  &__contant {
+  }
+}

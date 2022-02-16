@@ -21,6 +21,7 @@
   
   &__list {
     display: flex;
+    
     @include md {
       flex-direction: column;
       justify-content: center;

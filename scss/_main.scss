@@ -27,12 +27,9 @@
     transition: ;
   } */
   
-  
   &__text-content {
     flex: 0 1 45%;
   }
-  
-  
   
   &__description {
   
@@ -74,15 +71,10 @@
   &__video-description {
     font-size: 13px;
     line-height: 126%;
-    
     letter-spacing: 0.08em;
-    
     color: #B0B0B0;
-    
     padding-left: 12px;
-    
   }
-  
   
   &__video-description span {
     font-size: 9px;
@@ -94,7 +86,5 @@
     color: #000000;
     
   }
-  
-  
   
 }

@@ -20,13 +20,12 @@
     &_blue {
       background-color: #4285F4;
     }
+    
     &:hover {
-      background-color:darkgray;
+      background-color: darkgray;
       transition: all .5s ease;
     }
   }
-  
-  
   
   &__menu-icon {
     display: none;
@@ -41,12 +40,14 @@
       z-index: 2;
     }
   }
+  
   &__menu-icon::after,
   &__menu-icon::before {
     content: "";
     height: 3px;
     background-color: #000000;
   }
+  
   &__menu-icon span {
     height: 3px;
     background-color: #000000;
